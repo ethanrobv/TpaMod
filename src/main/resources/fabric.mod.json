@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "tpamod",
+	"version": "${version}",
+	"name": "TpaMod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Ethan V"
+	],
+	"contact": {
+		"homepage": "https://erv.world/",
+		"sources": "https://github.com/ethanrobv/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tpamod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"world.erv.mc.TpaMod"
+		],
+		"client": [
+			"world.erv.mc.TpaModClient"
+		]
+	},
+	"mixins": [
+		"tpamod.mixins.json",
+		{
+			"config": "tpamod.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.9",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

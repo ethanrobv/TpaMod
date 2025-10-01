@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "world.erv.mc.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ExampleClientMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
